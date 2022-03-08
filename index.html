@@ -9,29 +9,47 @@
 </head>
 <body>
     <!-- navbar -->
-    <div class="w-full h-20 bg-blue-500 absolute flex justify-between items-center">
-        <a class="flex cursor-pointer items-center text-white hover:text-gray-200" href="#">
+    <div class="nav w-full h-20 bg-blue-500 relative flex justify-between items-center text-blue-200 shadow-lg shadow-gray-500">
+        <a class="flex cursor-pointer items-center  hover:text-white transition ease-in-out duration-200" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-4" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 
+                001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
-            <h1 class="font-serif text-2xl m-3 transition ">Glauxian Industries</h1>
+            <h1 class="font-serif text-2xl m-3 transition">Glauxian Industries</h1>
         </a>
-        <div class="lg:hidden">
-            <a href="/about" class="text-white mx-10">About</a>
-            <a href="/products" class="text-white mx-10">Producs</a>
-            <a href="/Blog" class="text-white mx-10">Blog</a>
-        </div>
+        <nav class="invisible md:visible lg:visible">
+            <a href="/about" class=" mx-10 hover:text-white transition ease-in-out duration-200">About</a>
+            <a href="/products" class=" mx-10 hover:text-white transition ease-in-out duration-200">Products</a>
+            <a href="/Blog" class=" mx-10 hover:text-white transition ease-in-out duration-200">Blog</a>
+        </nav>
 
         
         <!-- mobile view -->
-        <a href="#" class="mr-2 lg:hidden md:hidden text-white">
+        <a href="#" class="button-mobile mr-2 md:hidden hover:text-white transition ease-in-out duration-200">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 
+                1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
               </svg>
         </a>
+
     </div>
 
-    <!-- content -->
+    <!--mini-navbar -->
+    <div class="miniNav py-4 bg-blue-500 text-blue-200 shadow-lg shadow-gray-500 transform hidden -translate-y-full">
+        <nav class="w-full flex justify-evenly md:visible lg:visible ">
+            <a href="/about" class=" mx-10 hover:text-white transition ease-in-out duration-200">About</a>
+            <a href="/products" class=" mx-10 hover:text-white transition ease-in-out duration-200">Products</a>
+            <a href="/Blog" class=" mx-10 hover:text-white transition ease-in-out duration-200">Blog</a>
+        </nav>
+    </div>
+
+    <!-- content  - lets add backbone for a SPA-->
+    <div class="bg-gray-500 w-full h-full ">
+    </div>
         <!-- modal -->
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
