@@ -1,0 +1,24 @@
+{
+  "name": "tailwind-training",
+  "version": "1.0.0",
+  "description": "Tailwind training because we can",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compilestyle":"npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brycejax/tailwind-training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brycejax/tailwind-training/issues"
+  },
+  "homepage": "https://github.com/Brycejax/tailwind-training#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
