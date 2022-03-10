@@ -1,2 +1,2 @@
-# tailwind-training
-Tailwind training because we can
+# This repo serves as BackboneJS and TailwindCSS training through a project
+
