@@ -506,12 +506,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   visibility: visible;
 }
 
-.invisible {
-  visibility: hidden;
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
 }
 
-.static {
-  position: static;
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .fixed {
@@ -533,6 +559,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ml-4 {
@@ -599,8 +630,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
-.h-24 {
-  height: 6rem;
+.h-64 {
+  height: 16rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-full {
