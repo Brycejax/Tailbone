@@ -55,6 +55,6 @@
         }
     });
 
-    var template = new DevsView({ el: ".container", model: developers });
+    var template = new DevsView({ el: ".card-container", model: developers });
     template.render();
 })();
